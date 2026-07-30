@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bmk3vxdt65plp"]
+
+[ext_resource type="PackedScene" uid="uid://50qn6nox2wv0" path="res://scenes/bloque.tscn" id="1_o5qli"]
+
+[node name="Main" type="Node2D" unique_id=594800401]
+
+[node name="StaticBody2D" parent="." unique_id=891132234 instance=ExtResource("1_o5qli")]
