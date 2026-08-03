@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://40k7k6ifih3h"]
+
+[ext_resource type="Script" uid="uid://bft608271teae" path="res://character_body_2d.gd" id="1_epypp"]
+[ext_resource type="Texture2D" uid="uid://cmavengwsg2of" path="res://static 2.png" id="2_0hol4"]
+[ext_resource type="Script" uid="uid://cg7vv17ebjv6l" path="res://sprite_2d.gd" id="3_q6r6c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jiowd"]
+size = Vector2(34, 55)
+
+[node name="Node2D" type="Node2D" unique_id=1116426918]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=546517394]
+script = ExtResource("1_epypp")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=908514831]
+texture = ExtResource("2_0hol4")
+script = ExtResource("3_q6r6c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1327341712]
+position = Vector2(-3, 3.5)
+shape = SubResource("RectangleShape2D_jiowd")
+
+[node name="Area2D" type="Area2D" parent="CharacterBody2D" unique_id=621205426]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D/Area2D" unique_id=126714075]
+position = Vector2(-3, 3.5)
+shape = SubResource("RectangleShape2D_jiowd")

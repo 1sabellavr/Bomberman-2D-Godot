@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://mjd4667f8e4i"]
+
+[ext_resource type="Texture2D" uid="uid://baqppv1u3r3ue" path="res://Bomba.png" id="1_wltir"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wltir"]
+size = Vector2(34, 55)
+
+[node name="RigidBody2D" type="RigidBody2D" unique_id=240372505]
+collision_layer = 2
+collision_mask = 0
+gravity_scale = 0.0
+freeze = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1184217716]
+texture = ExtResource("1_wltir")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=31694901]
+position = Vector2(-3, 3.5)
+shape = SubResource("RectangleShape2D_wltir")
