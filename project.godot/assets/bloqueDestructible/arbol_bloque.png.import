@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7vqfasvxnfku"
-path="res://.godot/imported/cesped_bloque.jpg-a4a2a4f95e23044629a41b97a83b46b4.ctex"
+uid="uid://bnjptlr68opcd"
+path="res://.godot/imported/arbol_bloque.png-41409b06fc266c81794cc7b0af8ab9fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/cesped_bloque.jpg"
-dest_files=["res://.godot/imported/cesped_bloque.jpg-a4a2a4f95e23044629a41b97a83b46b4.ctex"]
+source_file="res://assets/bloqueDestructible/arbol_bloque.png"
+dest_files=["res://.godot/imported/arbol_bloque.png-41409b06fc266c81794cc7b0af8ab9fd.ctex"]
 
 [params]
 
