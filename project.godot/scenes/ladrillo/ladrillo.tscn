@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c7er1hyx6l6u"]
 
-[ext_resource type="Texture2D" uid="uid://cfgufas5pqhi4" path="res://assets/ladrillo_bloque.png" id="1_sagcj"]
+[ext_resource type="Texture2D" uid="uid://cfgufas5pqhi4" path="res://assets/bloqueRecuadro/ladrillo_bloque.png" id="1_sagcj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tuglw"]
 size = Vector2(62, 62)

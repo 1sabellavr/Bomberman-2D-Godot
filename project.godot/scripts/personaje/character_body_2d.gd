@@ -1,15 +1,11 @@
 extends CharacterBody2D
+const  Bomba = preload("res://rigid_body_2d.tscn")
+var explosionBomba = preload("res://explosionBomba.tscn")
 
-@export var speed = 200.0
-
-func _physics_process(_delta):
-	var direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
-	velocity = direction * speed
+func _physics_process(delta):
+	var direction := Input.get_vector("Left", "Right", "Up", "Down")
+	velocity = direction * 170
 	move_and_slide()
-
-const  Bomba = preload("res://scenes/bomba/rigid_body_2d.tscn")
-var explosionBomba = preload("res://scenes/bomba/explosionBomba.tscn")
-
 func _input(event):
 	if event.is_action_pressed("Bomba"):
 		var bomba = Bomba.instantiate()

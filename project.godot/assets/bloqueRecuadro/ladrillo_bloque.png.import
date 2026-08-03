@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnjptlr68opcd"
-path="res://.godot/imported/arbol_bloque.png-24685f2be56d336333bca97edc0b176d.ctex"
+uid="uid://cfgufas5pqhi4"
+path="res://.godot/imported/ladrillo_bloque.png-9f0fba67d560025b56ba3ffa46f171eb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/arbol_bloque.png"
-dest_files=["res://.godot/imported/arbol_bloque.png-24685f2be56d336333bca97edc0b176d.ctex"]
+source_file="res://assets/bloqueRecuadro/ladrillo_bloque.png"
+dest_files=["res://.godot/imported/ladrillo_bloque.png-9f0fba67d560025b56ba3ffa46f171eb.ctex"]
 
 [params]
 

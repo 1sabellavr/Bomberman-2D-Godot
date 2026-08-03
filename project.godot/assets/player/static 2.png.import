@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfgufas5pqhi4"
-path="res://.godot/imported/ladrillo_bloque.png-c0f781dd1cfdb68347d45c1d504ab53a.ctex"
+uid="uid://cmavengwsg2of"
+path="res://.godot/imported/static 2.png-55ce13b59d21224c5c810a4de5216957.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ladrillo_bloque.png"
-dest_files=["res://.godot/imported/ladrillo_bloque.png-c0f781dd1cfdb68347d45c1d504ab53a.ctex"]
+source_file="res://assets/player/static 2.png"
+dest_files=["res://.godot/imported/static 2.png-55ce13b59d21224c5c810a4de5216957.ctex"]
 
 [params]
 

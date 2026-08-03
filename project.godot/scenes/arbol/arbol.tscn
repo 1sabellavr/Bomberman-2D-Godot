@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://1qnd2l4y7i2x"]
 
-[ext_resource type="Texture2D" uid="uid://bnjptlr68opcd" path="res://assets/arbol_bloque.png" id="1_ut0oq"]
+[ext_resource type="Texture2D" uid="uid://bnjptlr68opcd" path="res://assets/bloqueDestructible/arbol_bloque.png" id="1_ut0oq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tuglw"]
 size = Vector2(64, 64)
