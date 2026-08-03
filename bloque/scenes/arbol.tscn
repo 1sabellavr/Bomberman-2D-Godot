@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://1qnd2l4y7i2x"]
+
+[ext_resource type="Texture2D" uid="uid://bnjptlr68opcd" path="res://assets/arbol_bloque.png" id="1_ut0oq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tuglw"]
+size = Vector2(64, 64)
+
+[node name="Node2D" type="Node2D" unique_id=1731240707]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=578445670]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=353867486]
+texture = ExtResource("1_ut0oq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=400289605]
+shape = SubResource("RectangleShape2D_tuglw")
