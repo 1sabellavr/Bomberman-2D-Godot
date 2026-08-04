@@ -6,6 +6,7 @@
 size = Vector2(64, 64)
 
 [node name="Node2D" type="Node2D" unique_id=1731240707]
+position = Vector2(32, 32)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=578445670]
 
@@ -13,4 +14,5 @@ size = Vector2(64, 64)
 texture = ExtResource("1_ut0oq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=400289605]
+scale = Vector2(0.9, 0.9)
 shape = SubResource("RectangleShape2D_tuglw")

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://40k7k6ifih3h"]
 
-[ext_resource type="Script" uid="uid://bft608271teae" path="res://character_body_2d.gd" id="1_epypp"]
-[ext_resource type="Texture2D" uid="uid://cmavengwsg2of" path="res://static 2.png" id="2_0hol4"]
+[ext_resource type="Script" uid="uid://d3xch0iiu6118" path="res://scripts/personaje/character_body_2d.gd" id="1_epypp"]
+[ext_resource type="Texture2D" uid="uid://cmavengwsg2of" path="res://assets/player/static 2.png" id="2_0hol4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jiowd"]
 size = Vector2(27, 45)

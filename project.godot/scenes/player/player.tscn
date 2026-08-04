@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dn71eo6r1232c" path="res://assets/run 2.png" id="2_qhqgy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tuglw"]
-size = Vector2(33, 50)
+size = Vector2(64.5, 65)
 
 [node name="Node2D" type="Node2D" unique_id=866612497]
 
@@ -12,9 +12,10 @@ size = Vector2(33, 50)
 script = ExtResource("1_g2els")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1169876871]
-position = Vector2(351, 246)
+position = Vector2(352, 221)
+scale = Vector2(1.2075472, 1.25)
 texture = ExtResource("2_qhqgy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1967972955]
-position = Vector2(351, 247)
+position = Vector2(352, 224)
 shape = SubResource("RectangleShape2D_tuglw")
