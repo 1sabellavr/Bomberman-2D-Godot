@@ -1,6 +1,6 @@
 extends CharacterBody2D
-const  Bomba = preload("res://rigid_body_2d.tscn")
-var explosionBomba = preload("res://explosionBomba.tscn")
+const  Bomba = preload("res://scenes/bomba/rigid_body_2d.tscn")
+var explosionBomba = preload("res://scenes/bomba/explosionBomba.tscn")
 
 func _physics_process(delta):
 	var direction := Input.get_vector("Left", "Right", "Up", "Down")
