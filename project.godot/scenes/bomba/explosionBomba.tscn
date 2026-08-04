@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c6fja3ytkr85k"]
 
-[ext_resource type="Texture2D" uid="uid://cxn7gy6kn83hw" path="res://todaslasexplosiones.png" id="1_frdre"]
+[ext_resource type="Texture2D" uid="uid://cxn7gy6kn83hw" path="res://assets/bomba/explosiones/todaslasexplosiones.png" id="1_frdre"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_3723f"]
 particles_animation = true
