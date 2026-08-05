@@ -3,19 +3,20 @@
 [ext_resource type="Texture2D" uid="uid://cmavengwsg2of" path="res://assets/player/static 2.png" id="1_vycqi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cf2dk"]
-size = Vector2(31.50292, 17.9597)
+size = Vector2(38.071495, 21.43156)
 
 [node name="Node2D" type="Node2D" unique_id=1381195637]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=142630198]
+position = Vector2(351.99997, 249)
 scale = Vector2(3.9731965, 7.6307116)
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=587934715]
-position = Vector2(97, 77)
+position = Vector2(461.34134, 230.51588)
 scale = Vector2(-0.35378987, 0.16592307)
 texture = ExtResource("1_vycqi")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=824787468]
-position = Vector2(97.70972, 76.48532)
-scale = Vector2(0.7615005, 1.0173815)
+position = Vector2(98.7869, 78.03987)
+scale = Vector2(0.76295143, 0.89550513)
 shape = SubResource("RectangleShape2D_cf2dk")
