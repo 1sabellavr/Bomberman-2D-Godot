@@ -1,22 +1,37 @@
 [gd_scene format=3 uid="uid://c7owvu3ya72cm"]
 
-[ext_resource type="Texture2D" uid="uid://cmavengwsg2of" path="res://assets/player/static 2.png" id="1_vycqi"]
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cf2dk"]
-size = Vector2(38.071495, 21.43156)
+size = Vector2(62.95932, 22.918846)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0ogxu"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"new_animation",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"run",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"static",
+"speed": 5.0
+}]
 
 [node name="Node2D" type="Node2D" unique_id=1381195637]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=142630198]
-position = Vector2(351.99997, 249)
+position = Vector2(311, 344)
 scale = Vector2(3.9731965, 7.6307116)
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=587934715]
-position = Vector2(461.34134, 230.51588)
-scale = Vector2(-0.35378987, 0.16592307)
-texture = ExtResource("1_vycqi")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=824787468]
-position = Vector2(98.7869, 78.03987)
-scale = Vector2(0.76295143, 0.89550513)
+position = Vector2(-0.5033722, 2.7520351)
+scale = Vector2(0.7629512, 0.89550495)
 shape = SubResource("RectangleShape2D_cf2dk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1980139985]
+sprite_frames = SubResource("SpriteFrames_0ogxu")
+animation = &"new_animation"
