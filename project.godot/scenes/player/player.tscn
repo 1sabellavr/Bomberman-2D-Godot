@@ -6,6 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://dvrdcsqaxf5cr" path="res://assets/personajeAnimacion/Character Bomberman/run 4.png" id="4_0owmy"]
 [ext_resource type="Texture2D" uid="uid://cjvagm4ua5nok" path="res://assets/personajeAnimacion/Character Bomberman/run.png" id="5_qek5x"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p47bc"]
+size = Vector2(62, 62)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_uxa2c"]
 animations = [{
 "frames": [{
@@ -35,21 +38,21 @@ size = Vector2(34.375, 51.5)
 z_index = 1
 script = ExtResource("1_g2els")
 
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=848066016]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=521890456]
+shape = SubResource("RectangleShape2D_p47bc")
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=535834781]
 position = Vector2(0, -1)
 sprite_frames = SubResource("SpriteFrames_uxa2c")
 animation = &"run"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1327341712]
-position = Vector2(-0.1875, 1.25)
-shape = SubResource("RectangleShape2D_jiowd")
 
 [node name="Area2D" type="Area2D" parent="CharacterBody2D" unique_id=621205426]
 collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D/Area2D" unique_id=126714075]
-position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_jiowd")
 
 [connection signal="body_exited" from="CharacterBody2D/Area2D" to="CharacterBody2D" method="_on_area_2d_body_exited"]
