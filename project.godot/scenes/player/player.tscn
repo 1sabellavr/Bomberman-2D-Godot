@@ -1,20 +1,55 @@
-[gd_scene format=3 uid="uid://c0ofbynb7px75"]
+[gd_scene format=3 uid="uid://40k7k6ifih3h"]
 
 [ext_resource type="Script" uid="uid://dbjkjbeuak1gp" path="res://scripts/player.gd" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://dn71eo6r1232c" path="res://assets/player/run 2.png" id="2_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://c42lgcrhj46l4" path="res://assets/personajeAnimacion/Character Bomberman/run 2.png" id="2_p47bc"]
+[ext_resource type="Texture2D" uid="uid://b6qxbkh0gdfex" path="res://assets/personajeAnimacion/Character Bomberman/run 3.png" id="3_75vfm"]
+[ext_resource type="Texture2D" uid="uid://dvrdcsqaxf5cr" path="res://assets/personajeAnimacion/Character Bomberman/run 4.png" id="4_0owmy"]
+[ext_resource type="Texture2D" uid="uid://cjvagm4ua5nok" path="res://assets/personajeAnimacion/Character Bomberman/run.png" id="5_qek5x"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_tuglw"]
-size = Vector2(33, 50)
+[sub_resource type="SpriteFrames" id="SpriteFrames_uxa2c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_p47bc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_75vfm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0owmy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_qek5x")
+}],
+"loop": 1,
+"name": &"run",
+"speed": 5.0
+}]
 
-[node name="Node2D" type="Node2D" unique_id=866612497]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jiowd"]
+size = Vector2(34.375, 51.5)
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1614251030]
+[node name="Player" type="Node2D" unique_id=1116426918]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=546517394]
+z_index = 1
 script = ExtResource("1_g2els")
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1169876871]
-position = Vector2(351, 246)
-texture = ExtResource("2_qhqgy")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=535834781]
+position = Vector2(0, -1)
+sprite_frames = SubResource("SpriteFrames_uxa2c")
+animation = &"run"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1967972955]
-position = Vector2(351, 247)
-shape = SubResource("RectangleShape2D_tuglw")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1327341712]
+position = Vector2(-0.1875, 1.25)
+shape = SubResource("RectangleShape2D_jiowd")
+
+[node name="Area2D" type="Area2D" parent="CharacterBody2D" unique_id=621205426]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D/Area2D" unique_id=126714075]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_jiowd")
+
+[connection signal="body_exited" from="CharacterBody2D/Area2D" to="CharacterBody2D" method="_on_area_2d_body_exited"]
