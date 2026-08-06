@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://dvhmhq5uxbgkg"]
+
+[ext_resource type="Texture2D" uid="uid://vuw0ipep2dvd" path="res://assets/personajeAnimacion/Character Bomberman/died.png" id="1_cxtrr"]
+[ext_resource type="Texture2D" uid="uid://c42lgcrhj46l4" path="res://assets/personajeAnimacion/Character Bomberman/run 2.png" id="2_4tbbk"]
+[ext_resource type="Texture2D" uid="uid://cl1qbh6pb2on0" path="res://assets/personajeAnimacion/Character Bomberman/walk.png" id="3_3fdln"]
+[ext_resource type="Texture2D" uid="uid://b6qxbkh0gdfex" path="res://assets/personajeAnimacion/Character Bomberman/run 3.png" id="4_8y47c"]
+[ext_resource type="Texture2D" uid="uid://dvrdcsqaxf5cr" path="res://assets/personajeAnimacion/Character Bomberman/run 4.png" id="5_6rsnd"]
+[ext_resource type="Texture2D" uid="uid://cjvagm4ua5nok" path="res://assets/personajeAnimacion/Character Bomberman/run.png" id="6_wdyrn"]
+[ext_resource type="Texture2D" uid="uid://k1k6cy8vec8m" path="res://assets/personajeAnimacion/Character Bomberman/static 1.png" id="7_hlekv"]
+[ext_resource type="Texture2D" uid="uid://jif64jpkkpyl" path="res://assets/personajeAnimacion/Character Bomberman/static 5.png" id="8_m5a82"]
+[ext_resource type="Texture2D" uid="uid://rut6gd4hlyrb" path="res://assets/personajeAnimacion/Character Bomberman/static 2.png" id="9_y3n3h"]
+[ext_resource type="Texture2D" uid="uid://duioafa8fw6y3" path="res://assets/personajeAnimacion/Character Bomberman/static 4.png" id="10_w8468"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0ogxu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_cxtrr")
+}],
+"loop": 1,
+"name": &"died",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4tbbk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3fdln")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8y47c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_6rsnd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_wdyrn")
+}],
+"loop": 1,
+"name": &"run",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_hlekv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_m5a82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_y3n3h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_m5a82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_w8468")
+}],
+"loop": 1,
+"name": &"static",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cf2dk"]
+size = Vector2(14.985382, 9.117962)
+
+[node name="Node2D2" type="Node2D" unique_id=1381195637]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=142630198]
+position = Vector2(311, 344)
+scale = Vector2(3.9731965, 7.6307116)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1980139985]
+position = Vector2(-78.526184, -44.294685)
+scale = Vector2(0.25168648, 0.13104936)
+sprite_frames = SubResource("SpriteFrames_0ogxu")
+animation = &"static"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=824787468]
+position = Vector2(-78.45394, -44.44579)
+scale = Vector2(0.76295114, 0.8955049)
+shape = SubResource("RectangleShape2D_cf2dk")

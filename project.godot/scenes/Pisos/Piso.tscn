@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dumjry62lyqi8"]
+
+[ext_resource type="Texture2D" uid="uid://b7vqfasvxnfku" path="res://assets/bloquePiso/cesped_bloque.jpg" id="1_v503b"]
+
+[node name="Node2D" type="Node2D" unique_id=800305808]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=337334516]
+
+[node name="CespedBloque" type="Sprite2D" parent="." unique_id=1461511119]
+texture = ExtResource("1_v503b")
