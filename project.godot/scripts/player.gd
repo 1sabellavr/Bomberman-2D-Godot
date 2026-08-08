@@ -26,12 +26,21 @@ func explode(bomba:RigidBody2D):
 	bomba.get_parent().add_child(explosion)
 	explosion.restart()
 	bomba.queue_free()
+	
+	await get_tree().create_timer(0.05).timeout
+	for area in explosion.get_node("Area2D").get_overlapping_areas():
+		if area.is_in_group("bloque_destructible"):
+			area.get_parent().queue_free()
+		
 	await get_tree().create_timer(1).timeout
 	explosion.queue_free()
-	
-
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
 	if body.get_class() == "RigidBody2D": 
 		body.collision_layer = 1
+	pass # Replace with function body.
+
+
+@warning_ignore("unused_parameter")
+func _on_area_2d_body_entered(body: Node2D) -> void:
 	pass # Replace with function body.
