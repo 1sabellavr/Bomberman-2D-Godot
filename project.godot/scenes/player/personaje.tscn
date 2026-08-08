@@ -75,7 +75,7 @@ scale = Vector2(3.9731965, 7.6307116)
 position = Vector2(-78.526184, -44.294685)
 scale = Vector2(0.25168648, 0.13104936)
 sprite_frames = SubResource("SpriteFrames_0ogxu")
-animation = &"static"
+animation = &"run"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=824787468]
 position = Vector2(-78.45394, -44.44579)
