@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cw1jwvmavf4om"]
+
+[ext_resource type="Texture2D" uid="uid://wcgragv367bv" path="res://assets/bloqueDestructible/piedra_bloque.png" id="1_b1tyy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tuglw"]
+size = Vector2(64, 64)
+
+[node name="Node2D" type="Node2D" unique_id=443488763 groups=["bloque_destructible"]]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1415060492]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=702989491]
+texture_filter = 1
+texture = ExtResource("1_b1tyy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1533260203]
+shape = SubResource("RectangleShape2D_tuglw")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=978230395 groups=["bloque_destructible"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1705619587]
+shape = SubResource("RectangleShape2D_tuglw")
