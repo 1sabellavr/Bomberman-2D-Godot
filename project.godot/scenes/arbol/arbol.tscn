@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tuglw"]
 size = Vector2(64, 64)
 
-[node name="Node2D" type="Node2D" unique_id=1731240707]
+[node name="Node2D" type="Node2D" unique_id=1731240707 groups=["bloque_destructible"]]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=578445670]
 
@@ -15,4 +15,7 @@ texture = ExtResource("1_ut0oq")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=400289605]
 shape = SubResource("RectangleShape2D_tuglw")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=601711276]
+[node name="Area2D" type="Area2D" parent="." unique_id=1147559112 groups=["bloque_destructible"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=583944378]
+shape = SubResource("RectangleShape2D_tuglw")

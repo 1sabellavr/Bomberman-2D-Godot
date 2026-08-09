@@ -8,6 +8,9 @@ particles_anim_h_frames = 4
 particles_anim_v_frames = 2
 particles_anim_loop = false
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_tuglw"]
+radius = 40.012497
+
 [node name="CPUParticles2D" type="CPUParticles2D" unique_id=1175549609]
 z_index = 2
 material = SubResource("CanvasItemMaterial_3723f")
@@ -18,3 +21,8 @@ one_shot = true
 gravity = Vector2(0, 0)
 anim_speed_min = 1.0
 anim_speed_max = 1.0
+
+[node name="Area2D" type="Area2D" parent="." unique_id=382330994]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=766066797]
+shape = SubResource("CircleShape2D_tuglw")
