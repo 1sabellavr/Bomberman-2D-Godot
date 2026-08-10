@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://qrn7vyh15ayf"]
+
+[ext_resource type="Texture2D" uid="uid://dxuiwxa7wnld7" path="res://assets/bloqueRecuadro/metal_bloque.webp" id="1_wsn6e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tuglw"]
+size = Vector2(64, 64)
+
+[node name="Node2D" type="Node2D" unique_id=2038191967]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1391217014]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1852416589]
+texture_filter = 1
+texture = ExtResource("1_wsn6e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1774842365]
+shape = SubResource("RectangleShape2D_tuglw")
