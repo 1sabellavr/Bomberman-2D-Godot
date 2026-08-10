@@ -23,7 +23,8 @@ func _physics_process(_delta):
 			
 func change_animation(direction:Vector2):
 	if direction == Vector2.ZERO:
-		return 
+		animation_player.play("idle")
+		return
 			
 	if direction.x !=0:
 		animation_player.flip_h = direction.x < 0
