@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://k1k6cy8vec8m" path="res://assets/personajeAnimacion/Character Bomberman/static 1.png" id="6_h17s1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p47bc"]
-size = Vector2(62, 62)
+size = Vector2(58, 62)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_uxa2c"]
 animations = [{
@@ -38,7 +38,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"idle",
-"speed": 5.0
+"speed": 2.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -87,6 +87,7 @@ script = ExtResource("1_g2els")
 position = Vector2(481, 227)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=521890456]
+position = Vector2(-2, 0)
 shape = SubResource("RectangleShape2D_p47bc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=535834781]

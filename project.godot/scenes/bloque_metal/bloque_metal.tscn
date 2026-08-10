@@ -14,4 +14,5 @@ texture_filter = 1
 texture = ExtResource("1_wsn6e")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1774842365]
+scale = Vector2(0.9, 0.9)
 shape = SubResource("RectangleShape2D_tuglw")
