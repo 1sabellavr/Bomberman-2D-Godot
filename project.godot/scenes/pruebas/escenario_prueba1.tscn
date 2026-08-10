@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://b7vqfasvxnfku" path="res://assets/bloquePiso/cesped_bloque.jpg" id="1_qiknu"]
 [ext_resource type="PackedScene" uid="uid://c7er1hyx6l6u" path="res://scenes/ladrillo/ladrillo.tscn" id="2_b5vhi"]
 [ext_resource type="PackedScene" uid="uid://1qnd2l4y7i2x" path="res://scenes/arbol/arbol.tscn" id="3_d8jy7"]
-[ext_resource type="PackedScene" uid="uid://c0ofbynb7px75" path="res://scenes/player/player.tscn" id="4_b5vhi"]
+[ext_resource type="PackedScene" uid="uid://40k7k6ifih3h" path="res://scenes/player/player.tscn" id="4_b5vhi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b5vhi"]
 texture = ExtResource("1_qiknu")
@@ -22,7 +22,7 @@ scenes/2/scene = ExtResource("3_d8jy7")
 tile_size = Vector2i(64, 64)
 sources/0 = SubResource("TileSetScenesCollectionSource_d8jy7")
 
-[node name="Main" type="Node2D" unique_id=1447169347]
+[node name="escenario_prueba1" type="Node2D" unique_id=1447169347]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=995921799]
 tile_map_data = PackedByteArray("AAAFAAMAAAAAAAAAAAAFAAQAAAAAAAAAAAAFAAUAAAAAAAAAAAAFAAYAAAAAAAAAAAAFAAcAAAAAAAAAAAAGAAcAAAAAAAAAAAAHAAcAAAAAAAAAAAAIAAcAAAAAAAAAAAAJAAcAAAAAAAAAAAAKAAcAAAAAAAAAAAALAAcAAAAAAAAAAAAMAAcAAAAAAAAAAAAMAAYAAAAAAAAAAAAMAAUAAAAAAAAAAAAMAAQAAAAAAAAAAAAMAAMAAAAAAAAAAAAMAAIAAAAAAAAAAAALAAIAAAAAAAAAAAAKAAIAAAAAAAAAAAAJAAIAAAAAAAAAAAAIAAIAAAAAAAAAAAAHAAIAAAAAAAAAAAAGAAIAAAAAAAAAAAAFAAIAAAAAAAAAAAAHAAMAAAAAAAAAAAAIAAMAAAAAAAAAAAAJAAMAAAAAAAAAAAAKAAMAAAAAAAAAAAALAAMAAAAAAAAAAAALAAQAAAAAAAAAAAALAAUAAAAAAAAAAAALAAYAAAAAAAAAAAAKAAYAAAAAAAAAAAAKAAUAAAAAAAAAAAAKAAQAAAAAAAAAAAAJAAQAAAAAAAAAAAAJAAUAAAAAAAAAAAAJAAYAAAAAAAAAAAAIAAYAAAAAAAAAAAAIAAUAAAAAAAAAAAAIAAQAAAAAAAAAAAAHAAUAAAAAAAAAAAAHAAYAAAAAAAAAAAAHAAQAAAAAAAAAAAAGAAQAAAAAAAAAAAAGAAUAAAAAAAAAAAAGAAYAAAAAAAAAAAAGAAMAAAAAAAAAAAA=")

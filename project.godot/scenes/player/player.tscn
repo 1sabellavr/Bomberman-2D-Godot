@@ -39,6 +39,7 @@ z_index = 1
 script = ExtResource("1_g2els")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=848066016]
+position = Vector2(481, 227)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=521890456]
 shape = SubResource("RectangleShape2D_p47bc")
