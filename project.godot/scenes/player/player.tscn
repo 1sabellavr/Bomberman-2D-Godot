@@ -2,9 +2,12 @@
 
 [ext_resource type="Script" uid="uid://dbjkjbeuak1gp" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://c42lgcrhj46l4" path="res://assets/personajeAnimacion/Character Bomberman/run 2.png" id="2_p47bc"]
+[ext_resource type="Texture2D" uid="uid://cl1qbh6pb2on0" path="res://assets/personajeAnimacion/Character Bomberman/walk.png" id="2_qek5x"]
 [ext_resource type="Texture2D" uid="uid://b6qxbkh0gdfex" path="res://assets/personajeAnimacion/Character Bomberman/run 3.png" id="3_75vfm"]
 [ext_resource type="Texture2D" uid="uid://dvrdcsqaxf5cr" path="res://assets/personajeAnimacion/Character Bomberman/run 4.png" id="4_0owmy"]
+[ext_resource type="Texture2D" uid="uid://rut6gd4hlyrb" path="res://assets/personajeAnimacion/Character Bomberman/static 2.png" id="4_5gtgg"]
 [ext_resource type="Texture2D" uid="uid://cjvagm4ua5nok" path="res://assets/personajeAnimacion/Character Bomberman/run.png" id="5_qek5x"]
+[ext_resource type="Texture2D" uid="uid://k1k6cy8vec8m" path="res://assets/personajeAnimacion/Character Bomberman/static 1.png" id="6_h17s1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p47bc"]
 size = Vector2(62, 62)
@@ -13,24 +16,62 @@ size = Vector2(62, 62)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("2_qek5x")
+}, {
+"duration": 1.0,
 "texture": ExtResource("2_p47bc")
 }, {
+"duration": 1.0,
+"texture": ExtResource("4_5gtgg")
+}],
+"loop": 1,
+"name": &"down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_5gtgg")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_qek5x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_h17s1")
+}],
+"loop": 1,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_qek5x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_h17s1")
+}],
+"loop": 1,
+"name": &"right",
+"speed": 5.0
+}, {
+"frames": [{
 "duration": 1.0,
 "texture": ExtResource("3_75vfm")
 }, {
 "duration": 1.0,
 "texture": ExtResource("4_0owmy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_qek5x")
 }],
 "loop": 1,
-"name": &"run",
+"name": &"up",
 "speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jiowd"]
-size = Vector2(34.375, 51.5)
+size = Vector2(39.1875, 55.75)
 
 [node name="Player" type="Node2D" unique_id=1116426918]
 
@@ -44,15 +85,19 @@ script = ExtResource("1_g2els")
 shape = SubResource("RectangleShape2D_p47bc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=535834781]
-position = Vector2(0, -1)
+texture_filter = 1
+position = Vector2(-2.3841858e-07, -2.9802322e-08)
+scale = Vector2(0.96874964, 0.9609375)
 sprite_frames = SubResource("SpriteFrames_uxa2c")
-animation = &"run"
+animation = &"idle"
+frame_progress = 0.43787348
 
 [node name="Area2D" type="Area2D" parent="CharacterBody2D" unique_id=621205426]
 collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D/Area2D" unique_id=126714075]
+position = Vector2(-2, 3)
 shape = SubResource("RectangleShape2D_jiowd")
 
 [connection signal="body_exited" from="CharacterBody2D/Area2D" to="CharacterBody2D" method="_on_area_2d_body_exited"]
